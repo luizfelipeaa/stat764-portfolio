@@ -462,10 +462,12 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <blockquote>
 <p>Model 3</p>
 </blockquote>
-<p><span class="math display">\[Z = y\]</span></p>
-<p><span class="math display">\[[y|p, \lambda] = ZIP(p,\lambda)\]</span>
-<span class="math display">\[\eta_s \sim MVN(0, \Sigma)\]</span>
-<span class="math display">\[E(y) = e^{\beta_0+\beta_1 \cdot X +\eta_s+\eta_t}\]</span></p>
+<p><span class="math display">\[[y|p, \lambda]=ZIP(p,\lambda)\]</span>
+<span class="math display">\[\eta_s\sim MVN(0, \Sigma)\]</span>
+<span class="math display">\[P(y=0) = p\cdot e^{-0} + (1-p) \cdot e^{-{\lambda}}\]</span>
+<span class="math display">\[P(y = k) = (1-p) \cdot \frac{(e^{-{\lambda}}{\lambda^k})}{k!}, k \in N\]</span>
+<span class="math display">\[{\lambda} &gt; 0, p \in (0,1)\]</span>
+<span class="math display">\[E(y)=e^{\beta_0+\beta_1\cdot X+\eta_s+\eta_t}\]</span></p>
 </div>
 <div id="for-the-three-statistical-models-you-proposed-in-question-1-propose-a-way-to-measure-the-accuracy-and-perhaps-the-calibration-of-predictions." class="section level2 hasAnchor" number="30.5">
 <h2><span class="header-section-number">30.5</span> For the three statistical models you proposed in question #1, propose a way to measure the accuracy (and perhaps the calibration) of predictions.<a href="activity-3.html#for-the-three-statistical-models-you-proposed-in-question-1-propose-a-way-to-measure-the-accuracy-and-perhaps-the-calibration-of-predictions." class="anchor-section" aria-label="Anchor link to header"></a></h2>
